@@ -1,1 +1,122 @@
-<h1>My link in bio</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Connect Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <style>
+      body {
+        background-color: #004643;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 48px;
+        border: solid white;
+      }
+      
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+
+      .link {
+        background-color: #f9bc60;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link a {
+        color: #001e1d;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        color: #fffffe;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="items">
+      <div class="banner">
+        <img src="profile-pic.png" alt="Lydia Lo headshot" class="banner-image">
+      </div>
+    
+      <div class="name">Lydia Lo
+      </div>
+
+      <div class=""social-icons">
+        <a href="https://github.com/lydia-l3" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/lydia-lo-a22760164/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/lydialo13/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        
+        <a href="https://www.facebook.com/lydia.lo.311" target="_blank">
+          <i class="fa-brands fa-facebook"></i> 
+        </a>
+
+        <a href="https://open.spotify.com/user/12155315216?si=04d7b54a6a6a4dc4" target="_blank">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+
+        <a href="https://www.goodreads.com/user/show/68460063-lydia-lo" target="_blank">
+          <i class="fa-brands fa-goodreads"></i>
+        </a>
+      </div>
+
+      <div class="link">
+        <img src="/thumbnails/perpetual.jpg" alt="perpetual thumbnail" class="thumbnail">
+        <a target="_blank" href="https://www.perpetualuse.org/vision">The Vision for City-Scale Immersive Reuse Systems - Perpetual</a>
+      </div>
+
+      <div class="link">
+        <img src="/thumbnails/orange.jpg" alt="orange poem thumbnail" class="thumbnail">
+        <a target="_blank" href="https://gladdestthing.com/poems/the-orange">The Orange - Wendy Cope</a>
+      </div>
+
+      <div class="link">
+        <img src="/thumbnails/neuro.jpg" alt="neuro paper thumbnail" class="thumbnail">
+        <a target="_blank" href="https://www.jneurosci.org/content/39/47/9397">Predictability and Uncertainty in the Pleasure of Music - Journal of Neuroscience</a>
+      </div>
+    </div>
+    </body>
+  </html>
