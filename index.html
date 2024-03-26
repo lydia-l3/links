@@ -3,12 +3,19 @@
   <head>
     <!-- Connect Font Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Lydia Lo's links</title>
     <style>
       body {
+        min-height: 100%;
+        height: fit-content;
         background-color: #004643;
         padding-top: 40px;
+        box-sizing: border-box;
         padding-bottom: 40px;
         display: flex;
+        margin: 0;
+        font-family: 'Source Sans Pro';
         justify-content: center;
       }
 
@@ -37,16 +44,18 @@
 
       .link {
         background-color: #f9bc60;
+        border-radius: 500px;
         display: flex;
         align-items: center;
         padding: 5px;
       }
 
-      .link a {
-        color: #001e1d;
-        text-decoration: none;
+      .link-text {
+        flex: 1;
         text-align: center;
-        flex-grow: 1;
+        color: white;
+        text-decoration: none;
+        padding: 0 5px;
       }
 
       .name {
@@ -65,7 +74,17 @@
         text-decoration: none;
         display: flex;
         justify-content: space-around;
+        padding: 10px 0;
+        width: 100%;
       }
+
+      .social-icons a,
+    .social-icons a:visited,
+    .social-icons a:hover,
+    .social-icons a:active {
+      color: #fffffe; /* Ensure icons are always white, regardless of link state */
+    }
+    
     </style>
   </head>
   <body>
@@ -77,7 +96,7 @@
       <div class="name">Lydia Lo
       </div>
 
-      <div class=""social-icons">
+      <div class="social-icons">
         <a href="https://github.com/lydia-l3" target="_blank">
           <i class="fa-brands fa-github"></i>
         </a>
@@ -105,17 +124,17 @@
 
       <div class="link">
         <img src="/thumbnails/perpetual.jpg" alt="perpetual thumbnail" class="thumbnail">
-        <a target="_blank" href="https://www.perpetualuse.org/vision">The Vision for City-Scale Immersive Reuse Systems - Perpetual</a>
+        <a class="link-text" target="_blank" href="https://www.perpetualuse.org/vision">The Vision for City-Scale Immersive Reuse Systems - Perpetual</a>
       </div>
 
       <div class="link">
         <img src="/thumbnails/orange.jpg" alt="orange poem thumbnail" class="thumbnail">
-        <a target="_blank" href="https://gladdestthing.com/poems/the-orange">The Orange - Wendy Cope</a>
+        <a class="link-text" target="_blank" href="https://gladdestthing.com/poems/the-orange">The Orange - Wendy Cope</a>
       </div>
 
       <div class="link">
         <img src="/thumbnails/neuro.jpg" alt="neuro paper thumbnail" class="thumbnail">
-        <a target="_blank" href="https://www.jneurosci.org/content/39/47/9397">Predictability and Uncertainty in the Pleasure of Music - Journal of Neuroscience</a>
+        <a class="link-text" target="_blank" href="https://www.jneurosci.org/content/39/47/9397">Predictability and Uncertainty in the Pleasure of Music - Journal of Neuroscience</a>
       </div>
     </div>
     </body>
